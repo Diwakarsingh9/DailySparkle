@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    tools:context="com.apporio.dailysparkle.LoginAcitivity"
+    android:orientation="vertical"
+
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#ffffff">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="#455560"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="15dp"
+
+                    android:src="@drawable/logogrey"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#DADDDF"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#455560"
+                    android:hint="UserId"
+                    android:fontFamily=""
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColorHint="#c7455560"
+                    android:gravity="left|center"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="18dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usernaem"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#DADDDF"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#455560"
+                    android:hint="UserEmail"
+                    android:fontFamily=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColorHint="#c7455560"
+                    android:gravity="left|center"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:layout_marginRight="15dp">
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:text="HELP"
+                            android:id="@+id/help"
+                            android:background="@drawable/bgsign"
+                            android:gravity="left|center"
+                            android:textColor="#ffffff"
+                            geekui:customTypeface="fonts/gill_bold.ttf"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"
+                            android:layout_gravity="left|center"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingRight="20dp"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:layout_marginLeft="15dp">
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:text="LOG IN"
+                            android:id="@+id/login"
+                            android:layout_gravity="right|center"
+                            android:background="@drawable/bgsign"
+                            android:gravity="left|center"
+                            android:textColor="#ffffff"
+                            geekui:customTypeface="fonts/gill_bold.ttf"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="#455560"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llforinfo"
+                    android:visibility="visible"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp">
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Having trouble logging in?"
+                        android:id="@+id/trbl"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:gravity="left|center"
+                        android:textColor="#000"
+                        geekui:customTypeface="fonts/gill_bold.ttf"
+
+                        android:layout_gravity="left|center"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14dp" />
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Check your email for account details."
+                        android:id="@+id/chck"
+                        android:gravity="left|center"
+                        android:textColor="#000"
+                        geekui:customTypeface="fonts/gill_bold.ttf"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_gravity="left|center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="14dp" />
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For further help contact the Daily Sparkle : "
+                        android:id="@+id/check"
+                        android:gravity="left|center"
+                        android:textColor="#000"
+                        geekui:customTypeface="fonts/gill_bold.ttf"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_gravity="left|center"
+                        android:orientation="vertical"
+                        android:textSize="14dp" />
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email : info@dailysparkle.co.uk"
+                        android:id="@+id/efrf"
+                        android:gravity="left|center"
+                        android:textColor="#000"
+                        geekui:customTypeface="fonts/gill_bold.ttf"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_gravity="left|center"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:textSize="14dp" />
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone : 0800 228 9698"
+                        android:id="@+id/dxewrxrde"
+                        android:gravity="left|center"
+                        android:textColor="#000"
+                        geekui:customTypeface="fonts/gill_bold.ttf"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_gravity="left|center"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.cunoraz.gifview.library.GifView
+        android:id="@+id/gif1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        custom:gif="@drawable/splash"
+        android:layout_weight="1" />
+
+</FrameLayout>
